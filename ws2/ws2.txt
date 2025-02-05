@@ -1,0 +1,148 @@
+Script started on 2025-02-05 03:57:37+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="39"]
+
+# 2: Home directory path is /home/kaycee_aviles
+# Command: ~
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ ~
+
+bash: /home/kaycee_aviles: Is a directory
+
+# 3: My UID is 1001. It belongs to group 1002. 
+# Command: id -u and id -g. 
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ id -ug[K
+
+1001
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ id -g
+
+1002
+
+# 4: The file meminfo contains information about memory and the cpuinfo file contains information
+# about the CPU on my server.  
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ ls /proc | grep mem
+io[01;31m[Kmem[m[K
+[01;31m[Kmem[m[Kinfo
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ ls /proc | grep cpu
+[01;31m[Kcpu[m[Kinfo
+
+# 5: The total memory on my server is 976904 kB.
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ head /proc/meminfo
+MemTotal:         976904 kB
+MemFree:          454352 kB
+MemAvailable:     652572 kB
+Buffers:           13672 kB
+Cached:           307440 kB
+SwapCached:            0 kB
+Active:           104060 kB
+Inactive:         276040 kB
+Active(anon):        896 kB
+Inactive(anon):    67240 kB
+
+# 6: There are two processors on my server.
+# The processor architecture name is Intel(R) Xeon(R) CPU @ 2.20GHz.
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ head /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2199.998
+cache size	: 56320 KB
+physical id	: 0
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ head /[K[K[K[K[K[Ktail /proc [K/cpuinfo
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa mmio_stale_data retbleed bhi
+bogomips	: 4399.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2199.998
+cache size	: 56320 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa mmio_stale_data retbleed bhi
+bogomips	: 4399.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2199.998
+cache size	: 56320 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa mmio_stale_data retbleed bhi
+bogomips	: 4399.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+
+# 7: The os-release file under /etc/ contains this information.
+
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ cat [K /etc/os-release[K[K[K[K[K[K[K[K[K[K
+cat: /etc/: Is a directory
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ cat /etc/proc/cpuinfo[8Petc/os-release
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+]0;kaycee_aviles@instance-20250127-194126: ~/cs131/ws2[01;32mkaycee_aviles@instance-20250127-194126[00m:[01;34m~/cs131/ws2[00m$ exit
+exit
+
+Script done on 2025-02-05 04:02:01+00:00 [COMMAND_EXIT_CODE="0"]

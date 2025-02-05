@@ -1,0 +1,16 @@
+   44  ls
+   45  cd cs131/
+   46  mkdir ws2
+   48  cd ws2/
+   49  ~
+   50  id -u
+   51  id -g
+
+  161  ls /proc | grep mem
+  162  ls /proc | grep cpu
+  163  head /proc/meminfo
+  164  head /proc/cpuinfo
+  169  tail /proc/cpuinfo
+  170  cat /proc/cpuinfo 
+  171 /etc/os-release
+  221  script ws2.txt
