@@ -1,0 +1,58 @@
+  426  cd cs131/
+  427  ls
+  428  mkdir a1
+  429  cd a1/
+  435  vim ~/.bashrc
+  436  source ~/.bashrc
+  437  l
+  438  w
+  451  mkdir FARE
+  457  head 2019-01-h1.csv 
+  458  cd ..
+  459  cd a1
+  460  touch a1.txt
+  462  cp 2019-01-h1.csv ~/cs131/a1
+  468  head -2 2019-01-h1.csv 
+
+# Task 2b
+
+  477  grep ',50.0,120.0,' 2019-01-h1.csv | cut -d ',' -f 11 > FARE/50.0-120.0.txt
+  482  grep ',30.0,100.0,' 2019-01-h1.csv | cut -d ',' -f 11 > FARE/30.0-100.0.txt
+
+# Task 2c
+
+  495  head -n 5 2019-01-h1.csv 
+  526  head -n 5 50.0-120.0.txt 
+  563  total1=$(paste -sd+ 30.0-100.0.txt | bc)
+  564  count1=$(wc -l < 30.0-100.txt | bc)
+  566  mean1=$(echo "scale=2; $total1 / $count1 | bc)
+  567  echo "Mean fare for 30.0-100.0.txt: $mean1" > ~/cs131/a1/a1.txt
+
+  568  total2=$(paste -sd+ 50.0-120.0.txt | bc)
+  569  count2=$(wc -l < 50.0-120.0.txt | bc)
+  570  mean2=$(echo "scale=2; $total2 / $count2" | bc)
+  571  echo "Mean fare for 50.0-120.0: $mean2" >> ~/cs131/a1/a1.txt
+
+# Task 2d 
+
+  572  cd ..
+  573  cat a1.txt 
+  576  head 2019-01-h1.csv  
+  580  grep '2019-01-10' 2019-01-h1.csv > jan10totalamt.csv
+  586  cut -d ',' -f 17 jan10totalamt.csv > total_amount_jan10.txt
+  587  sort -n total_amount_jan10.txt | tail -n 1
+  588  echo "Highest total amount paid by customers on January 10th, 2019: $(sort -n total_amount_jan10.txt | tail -n 1)" >> a1.txt
+
+# Task 2e 
+  589  cat a1.txt 
+  602  head 2019-01-h1.csv 
+  621  grep '2019-01' 2019-01-h1.csv > jan2019.csv
+  622  head jan2019.csv 
+  627  grep ',[3-9]\.' jan2019.csv > rides_3_or_more.csv 
+  628  head -n 10 rides_3_or_more.csv 
+  631  cut -d ',' -f 9 rides_3_or_more.csv > dropoffs_rides_3_or_more.txt 
+  632  head -n 10 dropoffs_rides_3_or_more.txt 
+  633  sort dropoffs_rides_3_or_more.txt | uniq -c | sort -nr | head -n 10
+  634  echo "10 Most Popular Dropoff Locations (Among Rides with 3 or More Customers):" >> a1.txt
+  638  sort dropoffs_rides_3_or_more.txt | uniq -c | sort -nr | head -n 10 >> ~/cs131/a1/a1.txt 
+  639  history > cmds.log
