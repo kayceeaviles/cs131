@@ -1,6 +1,6 @@
 Script started on 2025-02-11 01:57:45+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="39"]
 
-# Task 1: Top 3 most popular pickup locations on January 2nd, 2019
+# Task 1: Top 3 most popular pickup location IDs on January 2nd, 2019
 
 kaycee_aviles@instance-20250127-194126: ~/cs131/ws3 $ grep '2019-01-02' 2019-01-h1.csv | cut -d ',' -f 8 | sort | uniq -c | sort -nr | head -n 3
 
@@ -10,7 +10,7 @@ kaycee_aviles@instance-20250127-194126: ~/cs131/ws3 $ grep '2019-01-02' 2019-01-
 # Left - Number of appearances
 # Right - Pickup location IDs
 
-# Task 2: Top 3 most popular pickup locations on January 10th, 2019
+# Task 2: Top 3 most popular pickup location IDs on January 10th, 2019
 
 kaycee_aviles@instance-20250127-194126: ~/cs131/ws3 $ grep '2019-01-10' 2019-01-h1.csv | cut -d ',' -f 8 | sort |  uniq -c | sort -nr | head -n 3
 
