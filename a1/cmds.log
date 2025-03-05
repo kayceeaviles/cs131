@@ -25,7 +25,7 @@
   526  head -n 5 50.0-120.0.txt 
   563  total1=$(paste -sd+ 30.0-100.0.txt | bc)
   564  count1=$(wc -l < 30.0-100.txt | bc)
-  566  mean1=$(echo "scale=2; $total1 / $count1 | bc)
+  566  mean1=$(echo "scale=2; $total1 / $count1" | bc)
   567  echo "Mean fare for 30.0-100.0.txt: $mean1" > ~/cs131/a1/a1.txt
 
   568  total2=$(paste -sd+ 50.0-120.0.txt | bc)
