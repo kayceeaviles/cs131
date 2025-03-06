@@ -13,16 +13,16 @@ It can save time and reduce potential syntax errors.
 
 **How you can use this command:**
 
-Replace <csvfile> with your csvfile of interest. 
-Replace <columnnumbers> with the column number(s) you are looking to extract.
+Replace csvfile with your csvfile of interest. 
+Replace columnnumbers with the column number(s) you are looking to extract.
 
-./ecol.sh <csvfile> <columnnumbers>
+./ecol.sh csvfile columnnumbers
 
 
 This script assumes the delimeter is ",".
 If the delimeter is "," you do not have to specify it in the command.
 
-If the delimeter is anything different, add -d "<delimeter>"
+If the delimeter is anything different, add -d "delimeter"
 
 
 **Example:**
