@@ -19,10 +19,10 @@ Replace columnnumbers with the column number(s) you are looking to extract.
 ./ecol.sh csvfile columnnumbers
 
 
-This script assumes the delimeter is ",".
-If the delimeter is "," you do not have to specify it in the command.
+This script assumes the delimiter is ",".
+If the delimiter is "," you do not have to specify it in the command.
 
-If the delimeter is anything different, add -d "delimeter"
+If the delimiter is anything different, add -d "delimiter"
 
 
 **Example:**
