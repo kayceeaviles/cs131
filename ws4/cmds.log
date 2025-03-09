@@ -1,0 +1,13 @@
+  919  cd cs131/
+  921  mkdir ws4
+  923  cd ws4
+  924  cd ..
+  925  cp 2019-01-h1.csv ws4/
+  926  cd ws4
+  927  ls
+  928  vim reorg.sh
+  929  chmod +x reorg.sh 
+  930  cat reorg.sh 
+  941  ./reorg.sh 
+  943  cat ws4.txt 
+  948  history > cmds.log
