@@ -8,21 +8,20 @@ It will display the column contents onto the terminal or to an output.
 **Why this command is useful:**
 
 This command is designed to be concise and straightfoward, with minimal input.
+
 It reduces command clutter, making the command easier to read. 
+
 It can save time and reduce potential syntax errors.
+
+This script will cycle through different delimiters until it matches the one in the CSV file.
 
 **How you can use this command:**
 
 Replace csvfile with your csvfile of interest. 
+
 Replace columnnumbers with the column number(s) you are looking to extract.
 
-./ecol.sh csvfile columnnumbers
-
-
-This script assumes the delimiter is ",".
-If the delimiter is "," you do not have to specify it in the command.
-
-If the delimiter is anything different, add -d "delimiter"
+**./ecol.sh csvfile columnnumbers**
 
 
 **Example:**
