@@ -8,13 +8,13 @@
  1075  sed 's/[:\"-]//g' 2019-01-h1.csv > no-separators.csv
  1076  head -10 no-separators.csv 
  1078  head -10 no-separators.csv >> ws56.txt 
- 1084  head no-separators.csv 
- 1085  sed 's/\([0-9]*\)\.[0-9]*\([,]\)/\1\2/g' no-separators.csv > no-fractions.csv 
- 1088  head -n 10 no-fractions.csv 
- 1090  head -10 no-fractions.csv >> ws56.txt 
- 1091  vim ws56.txt 
- 1092  head -10 2019-01-h1.csv 
- 1093  awk -F, '$17 >= 10.0 {print $14}' 2019-01-h1.csv | sort | uniq -c | awk '{print $2","$1}' >> ws56.txt 
- 1094  vim ws56.txt 
- 1095  awk -F, '{print $14}' 2019-01-h1.csv | sort | uniq -c | sort -nr | head -n 20 >> ws56.txt
- 1096  vim ws56.txt 
+ 1083  head 2019-01-h1.csv 
+ 1097  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv 
+ 1098  head -n 10 no-fractions.csv 
+ 1099  head -n 10 no-fractions.csv >> ws56.txt 
+ 1122  awk -F, '$17 >= 10.0 {print $14}' 2019-01-h1.csv | sort | uniq -c | awk '{print $2, $1}' > tipsover10.txt
+ 1123  head -n 10 tipsover10.txt 
+ 1148  awk -F, '{print $14}' 2019-01-h1.csv | sort | uniq -c | sort -nr | awk '{print $2" "$1}' | head -n 20 >> ws56.txt 
+ 1149  vim ws56.txt 
+ 1155  cat tipsover10.txt >> ws56.txt 
+ 1156  vim ws56.txt 
