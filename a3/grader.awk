@@ -7,23 +7,28 @@ BEGIN {
 }
 	
 {
+	# skips header
+
 	if (NR == 1) {
 		next
 	}
 	
-	# finding total score for student
+	# finding total score for each student
 
 	total_score = 0
 	for (i = 3; i <= NF; i++) {
+	# gets total from each class
 		total_score += $i;
 	}
 	
 	# finding average grade for student
 
 	avg_grade = total_score/3
-	
+	# assigning total and avg for each student with their name as the key in the array
 		student_total[$2] = total_score
 		student_avg[$2] = avg_grade
+	
+	# determining status
 
 	if (avg_grade >= 70) {
 
