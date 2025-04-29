@@ -1,0 +1,23 @@
+  285  cd
+  286  ls
+  287  cd cs131/
+  288  apt install python3-pip
+  289  sudo apt install python3-pip
+  290  pip install gdown
+  291  sudo apt update
+  292  pip install gdown
+  293  apt install python3-pip
+  294  sudo apt install python3-pip
+  295  pip install gdown
+  313  mkdir ws3
+  314  ls
+  315  cd ws3
+  316  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  317  /home/kaycee_aviles/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  357  head -n 3 2019-01-h1.csv 
+  379  grep '2019-01-02' 2019-01-h1.csv | cut -d ',' -f 8 | sort |  uniq -c | sort -nr | head -n 3
+  380  grep '2019-01-10' 2019-01-h1.csv | cut -d ',' -f 8 | sort |  uniq -c | sort -nr | head -n 3
+  381  script ws3.txt
+  382  vim ws3.txt 
+  383  hist > cmds.log
+  384  history > cmds.log

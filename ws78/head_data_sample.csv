@@ -1,0 +1,10 @@
+Breed,AKC_group,Popularity_in_US,Intelligence,Longevity,Genetic_ailments,Avg_price,Size,Weight (lbs),Shoulder_height (in),Intelligence_category
+Border Collie,herding,45,1,12.52,2,623.0,medium,50.0,20.0,Brightest
+Border Terrier,terrier,80,30,14.0,0,833.0,small,13.5,9.0,Above average
+Brittany,sporting,30,19,12.92,0,618.0,medium,35.0,19.0,Excellent
+Cairn Terrier,terrier,59,35,13.84,2,435.0,small,14.0,10.0,Above average
+Welsh Springer Spaniel,sporting,130,31,12.49,1,750.0,medium,29.0,18.0,Above average
+English Cocker Spaniel,sporting,63,18,11.66,0,800.0,medium,30.0,16.0,Excellent
+Cocker Spaniel,sporting,27,20,12.5,2,465.0,small,25.0,14.5,Excellent
+Papillon,toy,38,8,13.0,5,740.0,small,12.0,9.5,Brightest
+Australian Cattle Dog,herding,60,10,11.67,1,530.0,medium,34.0,18.5,Brightest

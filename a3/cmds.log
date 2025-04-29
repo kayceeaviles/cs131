@@ -1,0 +1,11 @@
+ 1097  cd cs131/
+ 1098  l
+ 1099  mkdir a3
+ 1100  cd a3/
+ 1105  vim grades.csv
+ 1108  cat grades.csv 
+ 1110  vim grader.awk 
+ 1119  awk -f grader.awk grades.csv 
+ 1127  awk -f grader.awk grades.csv > a3.txt
+ 1128  vim a3.txt 
+ 1131  history | tail -40 > cmds.log 

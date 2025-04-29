@@ -1,0 +1,14 @@
+Mean fare for 30.0-100.0: 8.07
+Mean fare for 50.0-120.0: 80.40
+Highest total amount paid by customers on January 10th, 2019: 36090.3
+10 Most Popular Dropoff Locations (Among Rides with 3 or More Customers):
+ 137950 236.0
+ 119538 237.0
+ 114418 161.0
+  96658 170.0
+  92930 230.0
+  90657 162.0
+  85880 142.0
+  85105 48.0
+  84408 239.0
+  83470 141.0
